@@ -1,0 +1,88 @@
+{
+  "version": "0.1.2",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build-storybook": "build-storybook",
+    "build": "tsdx build",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "start": "tsdx watch",
+    "storybook": "start-storybook -p 6006",
+    "test": "tsdx test --passWithNoTests"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "react-complex-filter",
+  "author": "Sebastian",
+  "module": "dist/react-complex-filter.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/react-complex-filter.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-complex-filter.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/addons": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@types/mousetrap": "^1.6.9",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "fast-sass-loader": "^2.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
+    "postcss": "^8.4.14",
+    "postcss-scss": "^4.0.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-is": "^18.1.0",
+    "reactstrap": "^9.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.52.3",
+    "sass-loader": "^13.0.0",
+    "size-limit": "^7.0.8",
+    "style-loader": "3.3.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@floating-ui/react-dom": "^0.7.2",
+    "classnames": "^2.3.1",
+    "mousetrap": "^1.6.5"
+  }
+}
