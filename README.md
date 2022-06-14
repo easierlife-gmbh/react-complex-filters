@@ -1,6 +1,6 @@
 # React Filter (BETA)
 
-![Simple Filter](images/filter.png)
+![Simple Filter](images/filter.gif)
 
 Simple filter library to provide an efficient filter for lists as it is also used by
 

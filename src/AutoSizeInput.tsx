@@ -23,6 +23,7 @@ export interface AutoSizeInputProps extends Omit<Omit<React.InputHTMLAttributes<
 
 export const AutoSizeInput = (props: AutoSizeInputProps) => {
     const {
+        className,
         fields,
         onChange,
         onDelete,
