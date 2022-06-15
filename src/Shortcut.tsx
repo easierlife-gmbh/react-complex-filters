@@ -22,7 +22,7 @@ export const Shortcut = (props: ShortcutProps) => {
     currentOnPressed.current = onPressed;
 
     React.useEffect(() => {
-        Mousetrap.bind(keys, (event) => {
+        Mousetrap.bind(keys, event => {
             if (!currentDisabled.current) {
                 currentOnPressed.current();
             }

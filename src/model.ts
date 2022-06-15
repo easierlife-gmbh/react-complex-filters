@@ -114,14 +114,14 @@ export module FilterOperations {
     }
 
     export function removeFilter(filter: ComplexFilterDto, index: number) {
-        filter = cleanupFilter(filter),
+        filter = cleanupFilter(filter);
         filter.logical.filters.splice(index, 1);
 
         return filter;
     }
 
     export function replaceFilter(filter: ComplexFilterDto, index: number, logical: FilterDescriptor) {
-        filter = cleanupFilter(filter),
+        filter = cleanupFilter(filter);
         filter.logical.filters[index] = logical;
 
         return filter;

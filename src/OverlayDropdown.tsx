@@ -22,11 +22,11 @@ export class OverlayController {
             }
         }
     }
-    
+
     public open() {
         this.listener?.(true);
     }
-    
+
     public close() {
         this.listener?.(false);
     }

@@ -84,7 +84,7 @@ export const FilterComparison = (props: FilterComparisonProps) => {
         operators.sort((a, b) => a.label.localeCompare(b.label, undefined, { sensitivity: 'base' }));
 
         return operators;
-    }, [field?.operators]);
+    }, [field, model]);
 
     return (
         <div className='sf-comparison-filter' onClick={doStopClick} ref={ref as any}>
